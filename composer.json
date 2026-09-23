@@ -1,0 +1,51 @@
+{
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "description": "A boilerplate for creating WordPress plugins.",
+    "version": "1.0.0",
+    "name": "urlund/wordpress-plugin-boilerplate",
+    "authors": [
+        {
+            "name": "Henrik Urlund",
+            "email": "henrik@urlund.com"
+        }
+    ],
+    "require": {
+        "urlund/wordpress-updater": "dev-main",
+        "urlund/wordpress-feature": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Urlund\\WordPress\\PluginBoilerplate\\": "src/"
+        }
+    },
+    "extra": {
+        "wordpress-updater": {
+            "type": "plugin",
+            "plugin": "wordpress-plugin-boilerplate.php",
+            "slug": "wordpress-plugin-boilerplate",
+            "repo": "urlund/wordpress-plugin-boilerplate",
+            "tested": "6.7",
+            "output_dir": "dist",
+            "banners": {
+                "low": "https://example.com/banner-772x250.jpg",
+                "high": "https://example.com/banner-1544x500.jpg"
+            },
+            "icons": {
+                "1x": "https://example.com/icon-128x128.png",
+                "2x": "https://example.com/icon-256x256.png"
+            },
+            "upgrade_notice": "Please update."
+        }
+    },
+    "require-dev": {
+        "php-stubs/wordpress-stubs": "^7.1"
+    },
+    "scripts": {
+        "wp-json": "wp-json",
+        "wp-zip": "wp-zip",
+        "wp-publish": "wp-publish",
+        "wp-version": "wp-version",
+        "wp-release": "wp-release"
+    }
+}
