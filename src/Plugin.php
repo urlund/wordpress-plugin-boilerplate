@@ -19,7 +19,7 @@ class Plugin extends Feature
         ?>
         <div class="notice notice-warning">
             <p>
-                <?php _e( 'WP Plugin Boilerplate is installed and ready to use.', 'wp-plugin-boilerplate' ); ?>
+                <?php _e('WordPress Plugin Boilerplate is installed and ready to use.', 'wp-plugin-boilerplate'); ?>
             </p>
         </div>
         <?php
