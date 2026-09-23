@@ -14,7 +14,7 @@ A starter WordPress plugin with [GitHub-based updates](https://github.com/urlund
 composer install
 ```
 
-Update `extra.wordpress-updater` in `composer.json` for your plugin (slug, repo, banners, icons). The runtime updater is already wired in `wp-plugin-boilerplate.php`.
+Update `extra.wordpress-updater` in `composer.json` for your plugin (slug, repo, banners, icons). The runtime updater is already wired in `wordpress-plugin-boilerplate.php`.
 
 ## Publishing a release
 
@@ -60,7 +60,7 @@ Release files land in `dist/` (e.g. `wordpress-plugin-boilerplate-1.0.1.zip` and
 
 Installed sites check GitHub for newer releases via `GitHubPluginRepository` in the main plugin file. Each GitHub release should include the versioned ZIP and `release.json` (what `wp-release --publish` uploads).
 
-For private repos, set `WP_PLUGIN_BOILERPLATE_GITHUB_TOKEN` in `wp-plugin-boilerplate.php` (or wire it from the environment).
+For private repos, set `WP_PLUGIN_BOILERPLATE_GITHUB_TOKEN` in `wordpress-plugin-boilerplate.php` (or wire it from the environment).
 
 ## License
 
