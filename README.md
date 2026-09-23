@@ -1,6 +1,6 @@
 # WordPress Plugin Boilerplate
 
-A starter WordPress plugin with [GitHub-based updates](https://github.com/urlund/wordpress-updater) via `urlund/wordpress-updater`.
+A starter WordPress plugin with [declarative features](https://github.com/urlund/wordpress-feature) via `urlund/wordpress-feature` and [GitHub-based updates](https://github.com/urlund/wordpress-updater) via `urlund/wordpress-updater`.
 
 ## Requirements
 
