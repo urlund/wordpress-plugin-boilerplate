@@ -1,6 +1,6 @@
 {
     "type": "wordpress-plugin",
-    "license": "GPL-2.0-or-later",
+    "license": "MIT",
     "description": "A boilerplate for creating WordPress plugins.",
     "version": "1.0.0",
     "name": "urlund/wordpress-plugin-boilerplate",
