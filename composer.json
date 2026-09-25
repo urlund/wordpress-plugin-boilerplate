@@ -39,7 +39,9 @@
         }
     },
     "require-dev": {
-        "php-stubs/wordpress-stubs": "^7.1"
+        "php-stubs/wordpress-stubs": "^7.1",
+        "php-stubs/acf-pro-stubs": "^6.8",
+        "php-stubs/woocommerce-stubs": "^11.1"
     },
     "scripts": {
         "wp-json": "wp-json",
