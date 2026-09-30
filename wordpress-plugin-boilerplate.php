@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WordPress Plugin Boilerplate
  * Description: A boilerplate for creating WordPress plugins.
- * Version: 1.0.0
+ * Version: 1.0.3
  * Author: Henrik Urlund
  * Author URI: https://urlund.com
  * Text Domain: wp-plugin-boilerplate

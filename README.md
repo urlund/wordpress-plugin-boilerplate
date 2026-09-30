@@ -38,18 +38,16 @@ composer run wp-release patch --dry-run
 
 ### 3. Publish
 
-`wp-release` runs **bump → zip → release.json**. Add `--publish` to upload to GitHub; add `--no-dev` for a production `vendor/` in the ZIP.
+`wp-release` runs **bump → zip → release.json**. Pass `--publish` to upload to GitHub; it also enables `--commit`, `--tag`, `--push`, and `--no-dev` by default. Opt out with `--no-git` (upload assets only) or `--with-dev` (keep current `vendor/`). Use `--bump-composer` if you also want to bump Composer’s top-level `version`.
 
 ```bash
-# Patch bump, composer bump, production package, commit + tag, upload to GitHub
-composer run wp-release patch --commit --tag --publish --no-dev --bump-composer
-
-# Minor / major
-composer run wp-release minor --commit --tag --publish --no-dev --bump-composer
-composer run wp-release major --commit --tag --publish --no-dev --bump-composer
+# Patch / minor / major
+composer run wp-release -- patch --publish
+composer run wp-release -- minor --publish
+composer run wp-release -- major --publish
 
 # Explicit version
-composer run wp-release 1.2.3 --commit --tag --publish --no-dev --bump-composer
+composer run wp-release -- 1.2.3 --publish
 ```
 
 Release files land in `dist/` (e.g. `wordpress-plugin-boilerplate-1.0.1.zip` and `release.json`). Download URLs look like:
