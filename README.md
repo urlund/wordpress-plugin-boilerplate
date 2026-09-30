@@ -42,9 +42,9 @@ composer run wp-release patch --dry-run
 
 ```bash
 # Patch / minor / major
-composer run wp-release -- patch --publish
-composer run wp-release -- minor --publish
-composer run wp-release -- major --publish
+composer run wp-release -- patch --publish --bump-composer
+composer run wp-release -- minor --publish --bump-composer
+composer run wp-release -- major --publish --bump-composer
 
 # Explicit version
 composer run wp-release -- 1.2.3 --publish
